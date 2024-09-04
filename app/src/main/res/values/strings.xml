@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Room Rental</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tenant_name">Tenant Name</string>
+    <string name="amount">Amount</string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="month_year">month_year</string>
+    <string name="more">More</string>
+    <string name="rent">Rent</string>
+
+
+    <array name="mode">
+        <item>Cash</item>
+        <item>Online</item>
+        <item>Cheque</item>
+        <item>Upi</item>
+    </array>
+
+
+    <string-array name="size">
+        <item>1 BHK</item>
+        <item>2 BHK</item>
+        <item>3 BHK</item>
+        <item>4 BHK</item>
+        <item>5 BHK</item>
+        <item>Other</item>
+    </string-array>
+
+
+<!--
+      <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+      <string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>
+      <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>
+     &lt;!&ndash; <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>&ndash;&gt;-->
+
+
+
+
+
+
+
+    <string name="admob_app_id">ca-app-pub-7473120879916787~9156731256</string>
+    <string name="banner_home_footer">ca-app-pub-7473120879916787/1442673019</string>
+    <string name="interstitial_full_screen">ca-app-pub-7473120879916787/5409838189</string>
+</resources>

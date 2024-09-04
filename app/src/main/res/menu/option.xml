@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.MainActivity">
+
+
+
+   <!-- <item  android:id="@+id/pdf"
+        android:title="Chart"
+        app:showAsAction="withText"
+
+
+      />-->
+
+    <item  android:id="@+id/add"
+        android:title="Add Tenant"
+        app:showAsAction="withText"
+
+       />
+
+    <item  android:id="@+id/edit"
+        android:title="Edit Room"
+        app:showAsAction="withText"
+
+        />
+</menu>

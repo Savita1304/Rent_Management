@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AllTenants"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@color/purple_700"
+            android:layout_weight="0.08"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+
+
+
+                android:gravity="center"
+                android:layout_weight="0.15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+               >
+
+                <ImageView
+                    android:background="@drawable/back"
+                    android:layout_margin="8dp"
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+
+                    android:id="@+id/heading"
+                    android:textSize="24dp"
+
+
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:text="All Tenants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="0.15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <!-- <ImageView
+                     android:id="@+id/notification"
+                     android:src="@drawable/notification"
+                     android:layout_margin="8dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>-->
+
+                <FrameLayout
+                    style="?attr/actionButtonStyle"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+
+                  <!--  <ImageView
+                        android:id="@+id/notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/notification"/>-->
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/cart_badge"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|end|top"
+                        android:layout_marginEnd="-5dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:textColor="@android:color/white"
+                        android:text=""
+                        android:textSize="10sp"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:weightSum="1"
+
+            android:layout_weight="0.84"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+             <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/list"
+                 android:layout_margin="8dp"
+
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/footer"
+            android:background="@color/purple_700"
+            android:layout_weight="0.08"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <com.google.android.gms.ads.AdView
+
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/banner_home_footer"></com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

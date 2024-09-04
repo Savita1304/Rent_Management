@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:baselineAligned="false"
+
+    android:id="@+id/main"
+   >
+
+
+    <LinearLayout
+
+        android:padding="4dp"
+        android:gravity="center|left"
+        android:background="@drawable/border7"
+        android:layout_weight="0.4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/tenant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="4dp"
+        android:gravity="center|left"
+        android:background="@drawable/border7"
+        android:layout_weight="0.28"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/amt"
+
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            android:text="@string/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@drawable/border7"
+        android:layout_weight="0.15"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:buttonTint="@color/purple_700"
+            android:id="@+id/state"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@drawable/border7"
+        android:layout_weight="0.17"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+       <!-- <TextView
+            android:id="@+id/edit"
+            android:textColor="@color/blue"
+
+            android:textSize="20sp"
+            android:text="@string/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>-->
+
+        <ImageView
+            android:id="@+id/edit"
+            android:src="@drawable/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

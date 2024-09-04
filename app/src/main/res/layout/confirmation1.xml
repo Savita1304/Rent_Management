@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/confirm_dialog_header"
+        android:background="@color/purple_700"
+        android:layout_weight="0.4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/aref_ruqaa"
+                android:text="Are you confirm?"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/edit"
+                app:tint="@color/white" />
+
+
+
+            <TextView
+
+                android:layout_marginLeft="8dp"
+                android:lines="4"
+                android:padding="4dp"
+                android:id="@+id/msg"
+                android:layout_below="@+id/title"
+
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/aref_ruqaa_bold"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+
+
+        android:layout_weight="0.15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="8dp"
+                android:text="Mode of Payment"
+                android:id="@+id/mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/montherror"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mode"
+                android:layout_marginStart="8dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                app:errorEnabled="true">
+
+
+                <AutoCompleteTextView
+
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:fontFamily="@font/aref_ruqaa"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.45"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:gravity="right|center"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:padding="4dp"
+                android:fontFamily="@font/aref_ruqaa"
+                android:id="@+id/no"
+                android:background="@color/purple_700"
+                android:textAlignment="center"
+
+                android:textColor="@color/white"
+                android:text="Cancel"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="left|center"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:padding="4dp"
+                android:fontFamily="@font/aref_ruqaa"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/yes"
+                android:background="@color/purple_700"
+                android:textAlignment="center"
+
+                android:textColor="@color/white"
+                android:text="Confirm"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

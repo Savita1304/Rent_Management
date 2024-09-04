@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AllPayment"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+
+            android:weightSum="1"
+            android:background="@color/purple_700"
+            android:layout_weight="0.08"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="0.15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_weight="0.85"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="All Payments"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/name"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="0.84"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/add"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/rec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/add"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="None of tenants records founds for this month"
+                            android:textColor="@color/gray"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="0.08"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:id="@+id/monthyear"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:text="@string/month_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_weight="0.08"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+
+                            android:id="@+id/ll1"
+                            android:background="@drawable/border4"
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:padding="8dp"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:text="@string/tenant_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll2"
+                            android:background="@drawable/border6"
+                            android:layout_weight="0.28"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:padding="8dp"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:text="@string/rent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll3"
+
+                            android:background="@drawable/border6"
+                            android:layout_weight="0.15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll4"
+                            android:background="@drawable/border5"
+                            android:layout_weight="0.17"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:textColor="@color/white"
+                                android:padding="8dp"
+                                android:textSize="17sp"
+                                android:text="@string/more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_weight="0.84"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/list"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:background="@color/purple_700"
+            android:layout_weight="0.08"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <com.google.android.gms.ads.AdView
+
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/banner_home_footer"></com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

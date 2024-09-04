@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Home"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@color/purple_700"
+            android:layout_weight="0.08"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+
+
+
+                android:layout_weight="0.15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:background="@drawable/logo1"
+                    android:layout_margin="8dp"
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+
+                    android:id="@+id/heading"
+                    android:textSize="20dp"
+
+
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:text="Room Rental Management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="0.15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+               <!-- <ImageView
+                    android:id="@+id/notification"
+                    android:src="@drawable/notification"
+                    android:layout_margin="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>-->
+
+                <FrameLayout
+                    style="?attr/actionButtonStyle"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/notification"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/cart_badge"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|end|top"
+                        android:layout_marginEnd="-5dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:textColor="@android:color/white"
+                        android:text=""
+                        android:textSize="10sp"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+   <!--     <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="0.84"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="0.15"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:padding="2dp"
+                    android:background="@drawable/rounded_corner"
+                    android:id="@+id/title"
+                    android:visibility="gone"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="Remainning Dues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="0.15"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_weight="0.15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/add"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:background="@drawable/shape"
+                        android:layout_margin="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+
+
+                            android:gravity="center"
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:background="@drawable/building"
+                                android:layout_margin="8dp"
+                                android:id="@+id/building"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="0.8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lbl"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:text="Add Building/House"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_weight="0.15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="0.70"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_weight="0.15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_margin="8dp"
+                        android:id="@+id/list"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_weight="0.15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:weightSum="1"
+
+            android:layout_weight="0.84"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+
+            <LinearLayout
+
+
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="0.20"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+
+
+
+                    android:id="@+id/l1"
+                    android:layout_weight="0.3333"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/building"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circle"
+                            android:src="@drawable/building1"
+                            app:tint="@color/purple_700" />
+
+
+                        <TextView
+
+
+
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/building"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/aref_ruqaa"
+                            android:text="Add Building"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/l2"
+                    android:layout_weight="0.3333"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/tenants"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circle"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/people"
+                            app:tint="@color/purple_700" />
+
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tenants"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/aref_ruqaa"
+                            android:text="All Tenants"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+
+                    android:id="@+id/l3"
+                    android:layout_weight="0.3333"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/reports"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circle"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/file"
+                            app:tint="@color/purple_700" />
+
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/reports"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/aref_ruqaa"
+                            android:text="Records"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="0.20"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+
+                    android:id="@+id/l4"
+                    android:layout_weight="0.3333"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/pending"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circle"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/rent"
+                            app:tint="@color/purple_700" />
+
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pending"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/aref_ruqaa"
+                            android:text="Dues"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/l5"
+                    android:layout_weight="0.3333"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                   <!-- <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/vegetable"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circle"
+                            android:scaleType="centerInside"
+                           />
+
+
+                        <TextView
+
+                            android:fontFamily="@font/aref_ruqaa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/vegetable"
+                            android:layout_centerInParent="true"
+                            android:text="Vegetables"
+                            android:textColor="@color/black"
+                             />
+
+
+
+                    </RelativeLayout>-->
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_weight="0.3333"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:layout_weight="0.60"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_margin="8dp"
+                    android:id="@+id/list"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/footer"
+            android:background="@color/purple_700"
+            android:layout_weight="0.08"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <com.google.android.gms.ads.AdView
+
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/banner_home_footer"></com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

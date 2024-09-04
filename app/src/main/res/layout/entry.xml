@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/gray1">
+
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:background="@color/purple_700"
+        android:layout_weight="0.33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:lines="4"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Enter the rent amount you are taking from tenant like full amount or part payment."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.32"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.textfield.TextInputLayout
+
+                app:errorEnabled="true"
+                android:id="@+id/eramt"
+               android:layout_margin="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="number"
+                    android:id="@+id/amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter rent amount"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.35"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/cancel"
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/update"
+                android:text="Update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddTenant"
+    android:weightSum="1"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/purple_700"
+        android:layout_weight="0.08"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_margin="8dp"
+                android:src="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_weight="0.85"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Add Tenant"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/title"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.84"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ScrollView
+                    android:fillViewport="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+                            android:layout_weight="0.30"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                            <LinearLayout
+                                android:id="@+id/main"
+                                android:gravity="center"
+                                android:layout_weight="0.6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.cardview.widget.CardView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="8dp"
+                                    android:layout_margin="8dp"
+                                    android:elevation="10dp">
+                                    <RelativeLayout
+
+
+                                        android:id="@+id/mainbg"
+                                        android:background="@drawable/custombg"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+
+
+                                            android:id="@+id/userpic"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/camre"
+                                            android:tag="none" />
+
+
+                                        <LinearLayout
+                                            android:id="@+id/snap"
+                                            android:padding="0.5dp"
+                                            android:background="@color/teal_700"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp">
+
+                                            <TextView
+                                                android:gravity="center"
+                                                android:textColor="@color/white"
+                                                android:text="Add Tenant Photo"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"/>
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:weightSum="1"
+                                android:orientation="vertical"
+                                android:layout_weight="0.4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+
+                                    android:layout_weight="0.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <com.google.android.material.textfield.TextInputLayout
+
+                                        app:errorEnabled="true"
+                                        android:id="@+id/nameError"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginRight="8dp"
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        >
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Tenant Name*"
+                                            android:singleLine="true"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="textCapWords"
+                                            />
+                                    </com.google.android.material.textfield.TextInputLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+
+                                    android:layout_weight="0.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <com.google.android.material.textfield.TextInputLayout
+
+                                        app:errorEnabled="true"
+                                        android:id="@+id/numError"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginRight="8dp"
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        >
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/number"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Mobile Number*"
+                                            android:singleLine="true"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="number"
+                                            />
+                                    </com.google.android.material.textfield.TextInputLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+
+
+
+
+                        <LinearLayout
+
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/middle"
+                            android:layout_weight="0.45"
+                            android:orientation="vertical"
+                            android:weightSum="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                            <LinearLayout
+                                android:layout_weight="0.30"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/amtError"
+
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/amount"
+                                        android:inputType="numberDecimal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Room Rent*"
+                                        android:singleLine="true"
+                                        android:imeOptions="actionDone"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:layout_weight="0.30"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_weight="0.2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/jdateError"
+                                        android:layout_marginLeft="8dp"
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        >
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/jdate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Start Date*"
+                                            android:editable="false"
+
+                                            />
+                                    </com.google.android.material.textfield.TextInputLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+
+                                    android:gravity="center"
+                                    android:layout_weight="0.8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+
+                                        android:layout_marginTop="8dp"
+                                        android:layout_gravity="top"
+                                        android:id="@+id/Tdate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/cal"
+                                        />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:layout_weight="0.15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+
+                                    android:layout_weight="0.50"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <CheckBox
+                                        android:checked="false"
+                                        android:id="@+id/elc"
+                                        android:textSize="18sp"
+                                        android:layout_marginLeft="8dp"
+                                        android:text="Electricity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+
+                                    android:layout_weight="0.50"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <CheckBox
+                                        android:checked="false"
+                                        android:id="@+id/water"
+                                        android:textSize="18sp"
+                                        android:text="Water"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+
+
+                                android:visibility="gone"
+                                android:id="@+id/middleinner"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:layout_weight="0.25"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:id="@+id/layelc"
+                                    android:layout_weight="0.50"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/eamtError"
+
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginRight="8dp"
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        >
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/eamount"
+                                            android:inputType="numberDecimal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Electricity Chrgs*"
+                                            android:singleLine="true"
+                                            android:imeOptions="actionDone"/>
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:id="@+id/laywater"
+                                    android:layout_weight="0.50"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/wamtError"
+
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginRight="8dp"
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        >
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/wamount"
+                                            android:inputType="numberDecimal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Water Chrgs*"
+                                            android:singleLine="true"
+                                            android:imeOptions="actionDone"/>
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/tt"
+                            android:layout_weight="0.15"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                app:errorEnabled="true"
+                                android:id="@+id/addError"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Tenant Address"
+                                    android:maxLines="3"
+                                    android:singleLine="false"
+                                    android:gravity="start"
+
+                                    android:inputType="textMultiLine"
+
+
+                                    />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="0.1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                            <Button
+                                android:textColor="@color/white"
+                                android:id="@+id/add"
+                                android:padding="12dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Add Tenant"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+     android:background="@color/purple_700"
+        android:layout_weight="0.08"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.google.android.gms.ads.AdView
+
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_home_footer"></com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</LinearLayout>
